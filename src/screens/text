@@ -1,0 +1,28 @@
+<View style={styles.formContainer}>
+          <Text style={styles.formText}>Create Account</Text>
+          <Text style={styles.loginText}>Login</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Username"
+          />
+          <TextInput
+            style={styles.input}
+            placeholder="Email"
+            keyboardType="email-address"
+          />
+          <TextInput
+            style={styles.input}
+            placeholder="Password"
+            secureTextEntry
+          />
+          <TouchableOpacity style={styles.button} >
+            <Text style={styles.buttonText}>Register</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.googlebutton} >
+            <Image
+              source={require('../../assets/google.png')}
+              style={styles.googleImage}
+            />
+            <Text style={styles.googleText}>Sign up with google</Text>
+          </TouchableOpacity>
+        </View>
